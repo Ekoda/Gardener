@@ -1,7 +1,7 @@
 #! /usr/bin/env bash
 
 cd Documents/Programming/Git/Gardener;
-for i in {1..jot -r 1  1 15}; 
+for i in {$((RANDOM%10+1))}; 
     do 
     python3 gardener.py;
     git add .;
